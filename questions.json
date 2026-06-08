@@ -1,0 +1,1272 @@
+{
+  "CH12": [
+    {
+      "question": "串列通訊（ Serial Communication ）的主要特性為何？",
+      "options": [
+        "同時傳送多位元資料",
+        "一次只傳送 1 位元資料",
+        "不需時脈",
+        "無需傳輸線"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "串列通訊相較於並列通訊，其最大優點為何？",
+      "options": [
+        "傳輸速度一定較快",
+        "使用較少傳輸線",
+        "不需控制電路",
+        "無需同步"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "下列何者屬於串列通訊常見應用？",
+      "options": [
+        "LED 矩陣",
+        "UART 通訊",
+        "RAM 存取",
+        "DMA 控制"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "同步串列通訊（ Synchronous Communication ）最大的特點為何？",
+      "options": [
+        "不需時脈訊號",
+        "傳輸雙方共用時脈",
+        "一次傳送 8 位元",
+        "不需同步"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "非同步串列通訊（ Asynchronous Communication ）中，用來表示資料開始的訊號稱為？",
+      "options": [
+        "Stop Bit",
+        "Start Bit",
+        "Parity Bit",
+        "Clock Bit"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在非同步串列通訊中， Stop Bit 的主要功能為何？",
+      "options": [
+        "表示資料開始",
+        "表示資料結束",
+        "提高速度",
+        "增加電流"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "波特率（ Baud Rate ）的定義為何？",
+      "options": [
+        "電壓大小",
+        "每秒傳輸的符號數",
+        "記憶體容量",
+        "CPU 速度"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若串列通訊雙方波特率設定不同，可能造成什麼問題？",
+      "options": [
+        "傳輸更快",
+        "資料錯誤或無法通訊",
+        "記憶體增加",
+        "Timer 停止"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Parity Bit （同位元檢查位元）的主要用途為何？",
+      "options": [
+        "控制時脈",
+        "錯誤檢查",
+        "提高電壓",
+        "控制 I/O"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "串列通訊中最常見的資料格式為何？",
+      "options": [
+        "5-bit",
+        "8-bit 資料格式",
+        "32-bit",
+        "64-bit"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "EIA-232 標準最常見名稱為何？",
+      "options": [
+        "USB",
+        "RS-232",
+        "SPI",
+        "I2C"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "RS-232 主要用途為何？",
+      "options": [
+        "高速影像",
+        "電腦與周邊設備串列通訊",
+        "記憶體控制",
+        "DMA"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "RS-232 的訊號電壓範圍通常為？",
+      "options": [
+        "0V ～ 5V",
+        "±3V ～ ±15V",
+        "0V ～ 1V",
+        "12V 固定"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "RS-232 中，邏輯 1 通常代表何種電壓？",
+      "options": [
+        "正電壓",
+        "負電壓",
+        "0V",
+        "5V"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "RS-232 中，邏輯 0 通常代表何種電壓？",
+      "options": [
+        "負電壓",
+        "正電壓",
+        "0V",
+        "浮接"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "8051 TTL 電平若要與 RS-232 通訊，通常需搭配什麼 IC ？",
+      "options": [
+        "7447",
+        "MAX232",
+        "ULN2003",
+        "ADC0804"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "MAX232 的主要功能為何？",
+      "options": [
+        "放大電流",
+        "TTL 與 RS-232 電平轉換",
+        "控制 Timer",
+        "顯示解碼"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "RS-232 的主要缺點為何？",
+      "options": [
+        "無法通訊",
+        "傳輸距離與速度有限",
+        "電壓不足",
+        "不需接地"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "RS-232 通常使用哪種接頭？",
+      "options": [
+        "USB",
+        "DB9 或 DB25",
+        "HDMI",
+        "RJ45"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "RS-232 屬於何種類型通訊？",
+      "options": [
+        "並列",
+        "點對點串列通訊",
+        "無線",
+        "光纖"
+      ],
+      "answer": "B"
+    }
+  ],
+  "CH10": [
+    {
+      "question": "在 8051 微控制器中， Timer 的主要功能為何？",
+      "options": [
+        "儲存資料",
+        "計時或計數外部事件",
+        "控制 I/O",
+        "傳輸資料"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "8051 內建幾個定時器？",
+      "options": [
+        "1 個",
+        "2 個（ Timer0 與 Timer1 ）",
+        "3 個",
+        "4 個"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer 在「 Timer 模式」下，其計數來源為何？",
+      "options": [
+        "外部脈波",
+        "內部機器週期",
+        "UART",
+        "Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer 在「 Counter 模式」下，其計數來源為何？",
+      "options": [
+        "內部時脈",
+        "外部輸入腳位脈波",
+        "RAM",
+        "ROM"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer0 的控制暫存器為何？",
+      "options": [
+        "SCON",
+        "TMOD",
+        "IE",
+        "PCON"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer 啟動控制位元為何？",
+      "options": [
+        "TF",
+        "TR",
+        "IE",
+        "EA"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "當 Timer 溢位時， TF 旗標會如何？",
+      "options": [
+        "清除",
+        "置 1",
+        "不變",
+        "歸零"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer 溢位後若未使用中斷，需如何處理 TF ？",
+      "options": [
+        "自動清除",
+        "需由程式清除",
+        "Reset",
+        "不需處理"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer 的計數單位在 12MHz 下為多少？",
+      "options": [
+        "1 μs",
+        "2 μs",
+        "0.5 μs",
+        "12 μs"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "若 Timer 計數速度越快，代表什麼？",
+      "options": [
+        "時脈越低",
+        "時脈越高",
+        "記憶體增加",
+        "CPU 停止"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 8051 定時器運作中，若設定為 Timer 模式且系統時脈為 12 MHz ，則定時器每增加 1 計數值 所需的時間為多少？（假設 1 機器週期 = 12 個時脈週期）",
+      "options": [
+        "1 μs",
+        "0.5 μs",
+        "12 μs",
+        "2 μs"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "在 Counter 模式下（ C/T = 1 ）， 8051 的 Timer0 計數來源為何？",
+      "options": [
+        "內部機器週期",
+        "外部腳位 T0 （ P3.4 ）的輸入脈波",
+        "UART 時脈",
+        "Reset 訊號"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer0 的溢位旗標 TF0 設為 1 的時機為何？",
+      "options": [
+        "Timer 啟動時",
+        "Timer 計數達到最大值並回到 0 時",
+        "Reset 時",
+        "Timer 停止時"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若使用 Timer0 並希望在溢位時自動觸發中斷，除了啟動 TR0 外，還需設定哪一項？",
+      "options": [
+        "設定 EA = 1 與 ET0 = 1",
+        "設定 PCON",
+        "設定 SCON",
+        "設定 ALE"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "在未使用中斷的情況下，當程式透過輪詢方式偵測 TF0 旗標，溢位後通常應進行何種操作？",
+      "options": [
+        "重設 CPU",
+        "清除 TF0 並重新載入初值",
+        "關閉電源",
+        "改變 I/O"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer0 與 Timer1 在功能上最主要的差異為何？",
+      "options": [
+        "Timer1 不能計時",
+        "Timer1 可用於串列通訊波特率產生",
+        "Timer0 無法使用",
+        "Timer1 沒有模式"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 8051 中， TR0 位元的主要功能為何？",
+      "options": [
+        "設定 Timer 模式",
+        "啟動或停止 Timer0",
+        "清除溢位",
+        "控制 I/O"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若程式設計中忘記將 TR0 設為 1 ，則 Timer0 會有什麼結果？",
+      "options": [
+        "正常計數",
+        "完全不運作",
+        "自動 Reset",
+        "亂數計數"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 Timer 設計中，若初始值設定過小（接近最大值），會造成什麼結果？",
+      "options": [
+        "溢位時間變長",
+        "溢位時間變短",
+        "不影響",
+        "無法運作"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Timer 計算延遲時間時，主要依據哪兩個因素？",
+      "options": [
+        "RAM 與 ROM",
+        "初始值與時脈頻率",
+        "I/O 與 UART",
+        "Reset 與電壓"
+      ],
+      "answer": "B"
+    }
+  ],
+  "CH8": [
+    {
+      "question": "在 8051 微控制器中，中斷（ Interrupt ）的主要功能為何？",
+      "options": [
+        "增加記憶體容量",
+        "讓 CPU 在特定事件發生時暫停目前程式並轉去執行服務程式",
+        "提高時脈頻率",
+        "控制電源"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "8051 中斷系統中，所有中斷是否預設為啟用？",
+      "options": [
+        "是",
+        "否，需要透過 IE 暫存器啟用",
+        "只啟用 Timer",
+        "只啟用外部中斷"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "IE （ Interrupt Enable ）暫存器的主要用途為何？",
+      "options": [
+        "儲存中斷資料",
+        "控制是否允許中斷發生",
+        "控制時脈",
+        "控制 I/O"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 IE 暫存器中， EA （ Enable All ）位元的功能為何？",
+      "options": [
+        "控制 Timer",
+        "啟用所有中斷總開關",
+        "控制 UART",
+        "控制 Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若 EA = 0 ，即使個別中斷已啟用，結果為何？",
+      "options": [
+        "中斷仍可執行",
+        "所有中斷均被禁止",
+        "只有 Timer 可執行",
+        "只有外部中斷可執行"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "8051 中的外部中斷 INT0 對應哪個腳位？",
+      "options": [
+        "P3.0",
+        "P3.1",
+        "P3.2",
+        "P3.3"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "外部中斷 INT1 對應哪個腳位？",
+      "options": [
+        "P3.2",
+        "P3.3",
+        "P3.4",
+        "P3.5"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "外部中斷觸發方式可設定為何種型態？",
+      "options": [
+        "只限電壓準位觸發",
+        "只限邊緣觸發",
+        "電壓準位或邊緣觸發",
+        "PWM 觸發"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "TCON 暫存器中 IT0 位元的功能為何？",
+      "options": [
+        "控制 Timer",
+        "設定 INT0 的觸發方式",
+        "控制 UART",
+        "Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若 IT0 = 1 ， INT0 為何種觸發方式？",
+      "options": [
+        "低電位觸發",
+        "高電位觸發",
+        "負緣觸發",
+        "正緣觸發"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "當中斷發生時， CPU 會先執行何種動作？",
+      "options": [
+        "Reset",
+        "跳至中斷向量位址",
+        "清除 RAM",
+        "停止運作"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "中斷服務程式（ ISR ）結束時應使用何指令返回？",
+      "options": [
+        "RET",
+        "RETI",
+        "JMP",
+        "CALL"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "RETI 與 RET 的差異為何？",
+      "options": [
+        "無差異",
+        "RETI 會通知中斷系統",
+        "RETI 用於 Timer",
+        "RET 用於 UART"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "IP （ Interrupt Priority ）暫存器的功能為何？",
+      "options": [
+        "設定中斷優先權",
+        "控制記憶體",
+        "控制時脈",
+        "控制 I/O"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "若兩個中斷同時發生， CPU 會如何處理？",
+      "options": [
+        "隨機執行",
+        "依優先權處理",
+        "同時執行",
+        "忽略"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "高優先權中斷是否可中斷低優先權中斷？",
+      "options": [
+        "否",
+        "是",
+        "不一定",
+        "無法判斷"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "低優先權中斷是否可中斷高優先權中斷？",
+      "options": [
+        "是",
+        "否",
+        "只限 Timer",
+        "只限 UART"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "中斷巢狀（ Nested Interrupt ）發生條件為何？",
+      "options": [
+        "多個中斷同時啟用且有優先權區分",
+        "只有一個中斷",
+        "無中斷",
+        "Reset"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "外部中斷旗標 IE0 何時被清除？",
+      "options": [
+        "手動",
+        "ISR 執行時自動清除（邊緣觸發）",
+        "Reset",
+        "Timer"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "中斷系統的主要優點為何？",
+      "options": [
+        "增加記憶體",
+        "提高即時反應能力",
+        "降低功耗",
+        "增加電壓"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 8051 中，若同時有多個相同優先權的中斷發生， CPU 將依照什麼順序決定執行哪一個中斷服務 程式？",
+      "options": [
+        "隨機決定",
+        "依中斷向量位址順序（固定優先順序）"
+      ],
+      "answer": "B"
+    }
+  ],
+  "CH9": [
+    {
+      "question": "在微控制器系統中，所謂 I/O 資料轉移方式，主要是指 CPU 與周邊裝置之間資料交換的控制方 式。以下何者不屬於常見的 I/O 資料轉移方式？",
+      "options": [
+        "輪呼式（ Polling ）",
+        "中斷式（ Interrupt-driven ）",
+        "直接記憶體存取（ DMA ）",
+        "編譯式（ Compile-driven ）"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "在輪呼式（ Polling ） I/O 中， CPU 會反覆檢查某一裝置狀態旗標，其主要缺點為何？",
+      "options": [
+        "電路複雜",
+        "CPU 時間被浪費在等待",
+        "無法讀資料",
+        "記憶體不足"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "中斷式 I/O 的最大優點為何？",
+      "options": [
+        "設計簡單",
+        "CPU 不需持續等待裝置",
+        "無需控制訊號",
+        "不需程式"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "DMA （ Direct Memory Access ）的主要特性為何？",
+      "options": [
+        "CPU 負責所有資料搬移",
+        "資料由周邊直接與記憶體交換",
+        "只用於 UART",
+        "速度最慢"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 DMA 模式下， CPU 的角色通常為何？",
+      "options": [
+        "完全停止",
+        "僅初始化與控制",
+        "直接搬移資料",
+        "控制 I/O 埠"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "輪呼式 I/O 最適合用於哪種情況？",
+      "options": [
+        "高速資料傳輸",
+        "低速或簡單裝置",
+        "大型系統",
+        "DMA 系統"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "中斷式 I/O 與輪呼式相比，其主要改善為何？",
+      "options": [
+        "記憶體增加",
+        "CPU 利用率提升",
+        "電壓增加",
+        "I/O 數量增加"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "DMA 傳輸完成後，通常會透過何種方式通知 CPU ？",
+      "options": [
+        "Reset",
+        "中斷",
+        "輪詢",
+        "無通知"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在高速資料傳輸應用中，最適合使用哪種方式？",
+      "options": [
+        "輪呼式",
+        "中斷式",
+        "DMA",
+        "手動"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "若系統設計需即時回應但資料量不大，最適合的方式為？",
+      "options": [
+        "DMA",
+        "中斷式",
+        "輪呼式",
+        "Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在嵌入式系統中，當設計者選擇 I/O 資料轉移方式時，若希望在不大量占用 CPU 資源的情況下處 理周邊裝置事件，應優先考慮哪一種方式？",
+      "options": [
+        "輪呼式（ Polling ）",
+        "中斷式（ Interrupt-driven ）",
+        "忙碌等待（ Busy Waiting ）",
+        "手動控制"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若系統需要處理大量且連續的資料傳輸（例如影像或高速感測資料），為了減少 CPU 負擔並提高 效率，最適合採用哪種 I/O 資料轉移方式？",
+      "options": [
+        "輪呼式",
+        "中斷式",
+        "DMA （直接記憶體存取）",
+        "軟體延遲"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "在比較三種 I/O 資料轉移方式（ Polling 、中斷、 DMA ）時，下列何者關於 CPU 使用率的敘述最正 確？",
+      "options": [
+        "Polling 使用率最低",
+        "DMA 使用率最高",
+        "DMA 使用率最低",
+        "三者相同"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "在系統設計中，若裝置回應時間不固定且需要即時處理，但資料量不大，應優先選擇哪種方式？",
+      "options": [
+        "Polling",
+        "DMA",
+        "中斷式 I/O",
+        "Reset"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "下列關於 DMA 的敘述，何者最正確？",
+      "options": [
+        "CPU 必須逐筆搬移資料",
+        "DMA 控制器可直接在記憶體與周邊之間傳輸資料",
+        "DMA 僅適用於低速系統",
+        "DMA 無需控制訊號"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在輪呼式 I/O 中， CPU 會透過何種方式判斷裝置是否準備好？",
+      "options": [
+        "中斷",
+        "讀取狀態旗標",
+        "Reset",
+        "Timer"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "輪呼式 I/O 的基本流程為何？",
+      "options": [
+        "中斷 → 處理",
+        "檢查 → 等待 → 處理",
+        "DMA→ 處理",
+        "Reset→ 執行"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若裝置長時間未準備好， Polling 系統會如何？",
+      "options": [
+        "CPU 執行其他任務",
+        "CPU 持續等待",
+        "自動 Reset",
+        "停止"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Polling 最主要的效率問題來自於？",
+      "options": [
+        "記憶體",
+        "空轉等待（ Busy Waiting ）",
+        "電壓",
+        "Timer"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Polling 的優點為何？",
+      "options": [
+        "高效率",
+        "程式簡單",
+        "無需 CPU",
+        "無需記憶體"
+      ],
+      "answer": "B"
+    }
+  ],
+  "CH7": [
+    {
+      "question": "在標準 8051 微控制器中，一個機器週期（ Machine Cycle ）包含多少個時脈週期（ Clock Cycles ）？",
+      "options": [
+        "6",
+        "12",
+        "24",
+        "48"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若系統晶振為 12 MHz ，則一個機器週期時間為多少？",
+      "options": [
+        "1 μs",
+        "2 μs",
+        "0.5 μs",
+        "12 μs"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "某系統使用 6 MHz 晶振，請問一個機器週期的時間為何？",
+      "options": [
+        "1 μs",
+        "2 μs",
+        "3 μs",
+        "0.5 μs"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 8051 中，大部分指令的執行時間是以何種單位表示？",
+      "options": [
+        "秒",
+        "電壓",
+        "機器週期",
+        "位元數"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "若某指令需要 2 個機器週期，在 12 MHz 下執行時間為多少？",
+      "options": [
+        "1 μs",
+        "2 μs",
+        "3 μs",
+        "4 μs"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "提高晶振頻率時，對系統效能的影響為何？",
+      "options": [
+        "降低速度",
+        "提高執行速度",
+        "無影響",
+        "增加記憶體"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "時脈週期（ Clock Cycle ）的定義為何？",
+      "options": [
+        "一條指令時間",
+        "振盪器完成一次震盪所需時間",
+        "記憶體讀取時間",
+        "中斷時間"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "機器週期與時脈週期的關係為何？",
+      "options": [
+        "相同",
+        "機器週期由多個時脈週期構成",
+        "無關",
+        "相反"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若使用 11.0592 MHz 晶振，其最常見用途為何？",
+      "options": [
+        "降低功耗",
+        "精確產生串列通訊 Baud Rate",
+        "增加 RAM",
+        "控制 LED"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在高速系統中，時脈頻率過高可能導致什麼問題？",
+      "options": [
+        "記憶體增加",
+        "功耗與發熱增加",
+        "指令變少",
+        "UART 停止"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在標準 8051 架構中，若某一指令需執行 3 個機器週期，且系統使用 12 MHz 晶振，請問該指令 的執行時間約為多少？",
+      "options": [
+        "1 μs",
+        "2 μs",
+        "3 μs",
+        "4 μs"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "若系統晶振頻率改為 24 MHz （仍為 12T 架構），則與 12 MHz 相比，系統整體執行速度會如何 變化？",
+      "options": [
+        "不變",
+        "增加為 2 倍",
+        "降低為一半",
+        "隨機變化"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 8051 中，機器週期的長短會直接影響哪一項系統性能？",
+      "options": [
+        "RAM 容量",
+        "指令執行速度",
+        "I/O 腳數量",
+        "中斷數量"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若使用 11.0592 MHz 晶振，選擇此頻率的主要原因為何？",
+      "options": [
+        "降低功耗",
+        "提供較高運算速度",
+        "方便產生標準串列通訊速率（ Baud Rate ）",
+        "增加記憶體容量"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "在 Timer 設計中，若時脈頻率越高，則 Timer 計數的解析度會如何變化？",
+      "options": [
+        "降低",
+        "提高",
+        "不變",
+        "無法判斷"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若某系統使用低頻晶振（例如 1 MHz ），則最可能出現的系統特性為何？",
+      "options": [
+        "高速運算",
+        "低功耗但速度較慢",
+        "記憶體增加",
+        "UART 速度變快"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在設計延遲程式時，若未考慮機器週期，最可能造成什麼問題？",
+      "options": [
+        "記憶體溢位",
+        "延遲時間不準確",
+        "CPU 停止",
+        "I/O 錯誤"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若一個 Timer 設計依據 12 MHz ，但實際晶振為 11 MHz ，將導致什麼結果？",
+      "options": [
+        "計時更準",
+        "計時偏慢",
+        "計時偏快",
+        "無影響"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "機器週期主要由哪個硬體決定？",
+      "options": [
+        "RAM",
+        "晶振頻率",
+        "I/O",
+        "UART"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在高精度應用（如通訊或測量）中，最重要的時脈特性為何？",
+      "options": [
+        "高電壓",
+        "穩定與準確頻率",
+        "大容量",
+        "多 I/O"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 8051 外部記憶體系統中， ALE （ Address Latch Enable ）訊號的主要功能為何？",
+      "options": [
+        "控制中斷",
+        "鎖存低位址（ A0–A7 ）",
+        "控制資料傳輸",
+        "Reset 系統"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "PSEN （ Program Store Enable ）訊號主要用於何種操作？",
+      "options": [
+        "寫入外部 RAM",
+        "讀取外部記憶體",
+        "控制 Timer",
+        "控制 I/O"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "PSEN 訊號屬於哪種類型？",
+      "options": [
+        "Active High",
+        "Active Low",
+        "雙向",
+        "類比"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "ALE 訊號在系統中通常與哪個元件搭配使用？",
+      "options": [
+        "RAM",
+        "鎖存器（ Latch ）",
+        "UART",
+        "Timer"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若 ALE 訊號失效，系統最可能出現什麼問題？",
+      "options": [
+        "Timer 停止",
+        "位址鎖存錯誤",
+        "UART 錯誤",
+        "LED 不亮"
+      ],
+      "answer": "B"
+    }
+  ],
+  "CH11": [
+    {
+      "question": "4×4 鍵盤矩陣共有幾個按鍵？",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "32"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "4×4 鍵盤通常需要幾條 I/O 線？",
+      "options": [
+        "4",
+        "8 （ 4 列＋ 4 行）",
+        "16",
+        "2"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "鍵盤矩陣設計的主要目的為何？",
+      "options": [
+        "增加速度",
+        "減少 I/O 腳位使用",
+        "增加電壓",
+        "增加記憶體"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在掃描鍵盤時，通常會採用什麼方式？",
+      "options": [
+        "全部輸入",
+        "列掃描或行掃描",
+        "DMA",
+        "Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "鍵盤掃描的基本原理為何？",
+      "options": [
+        "同時讀取所有鍵",
+        "逐行或逐列輸出，讀取另一方向",
+        "使用 UART",
+        "使用 Timer"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若某一列設為低電位，其他列為高電位，按鍵按下時會發生什麼？",
+      "options": [
+        "無變化",
+        "對應行會變為低電位",
+        "全部變高",
+        "Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "鍵盤未按下時，輸入端通常為何狀態？",
+      "options": [
+        "低電位",
+        "高電位（上拉）",
+        "浮動",
+        "無訊號"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "為避免按鍵誤判，需加入什麼機制？",
+      "options": [
+        "Timer",
+        "去彈跳（ Debounce ）",
+        "Reset",
+        "DMA"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "去彈跳通常透過什麼方式實現？",
+      "options": [
+        "高電壓",
+        "延遲或軟體判斷",
+        "增加記憶體",
+        "UART"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在鍵盤掃描程式中，最常使用哪種 I/O 方式？",
+      "options": [
+        "DMA",
+        "Polling",
+        "Reset",
+        "ADC"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 4×4 鍵盤掃描中，若所有列（ Columns ）皆設為高電位，而行（ Rows ）設為輸入，當按鍵未被按 下時，輸入端通常呈現何種狀態？",
+      "options": [
+        "低電位",
+        "高電位（由上拉電阻維持）",
+        "浮動",
+        "隨機"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在掃描過程中，若某一列被設為低電位，並偵測到某一行變為低電位，代表什麼？",
+      "options": [
+        "無按鍵按下",
+        "該列與該行交叉的按鍵被按下",
+        "電路故障",
+        "Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "鍵盤掃描程式中，通常會逐列輸出低電位，其主要目的為何？",
+      "options": [
+        "減少電壓",
+        "確定按鍵位置",
+        "提高速度",
+        "控制 Timer"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若掃描速度過慢，可能會造成什麼問題？",
+      "options": [
+        "CPU 過載",
+        "按鍵反應延遲",
+        "記憶體不足",
+        "Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若未加入去彈跳（ Debounce ）處理，可能導致什麼現象？",
+      "options": [
+        "按鍵無效",
+        "一次按壓被判定為多次輸入",
+        "CPU 停止",
+        "電壓過高"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "去彈跳時間通常設定為多少範圍較合理？",
+      "options": [
+        "1 ns",
+        "約 5 ～ 20 ms",
+        "1 秒",
+        "1 分鐘"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "若同時按下多個鍵，鍵盤矩陣可能產生什麼問題？",
+      "options": [
+        "無法輸入",
+        "鬼鍵（ Ghost Key ）現象",
+        "Timer 錯誤",
+        "Reset"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "為避免鬼鍵問題，可採用何種方法？",
+      "options": [
+        "提高電壓",
+        "加入二極體隔離",
+        "增加 RAM",
+        "使用 DMA"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "在 鍵盤掃描中，通常哪一方向設為輸出？",
+      "options": [
+        "行",
+        "列",
+        "任意",
+        "RAM"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "鍵盤掃描最常搭配哪種 I/O 方式？",
+      "options": [
+        "DMA",
+        "Polling",
+        "Reset",
+        "ADC"
+      ],
+      "answer": "B"
+    }
+  ]
+}

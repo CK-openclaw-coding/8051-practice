@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8051 刷題練習</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 20px auto; padding: 0 10px; line-height: 1.6; background: #f4f4f9; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .option { display: block; margin: 10px 0; padding: 10px; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; transition: 0.2s; }
+        .option:hover { background: #eee; }
+        .option.correct { background: #d4edda; border-color: #c3e6cb; }
+        .option.wrong { background: #f8d7da; border-color: #f5c6cb; }
+        .hidden { display: none; }
+        select { padding: 10px; font-size: 16px; margin-bottom: 20px; }
+        h1 { color: #333; }
+        #stats { margin-bottom: 10px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🚀 8051 刷題練習</h1>
+    <div id="setup">
+        <label for="chapter-select">選擇章節：</label>
+        <select id="chapter-select">
+            <option value="">載入中...</option>
+        </select>
+        <button id="start-btn" style="padding: 10px 20px; cursor: pointer;">開始練習</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <div id="stats">進度: <span id="current-idx">0</span> / <span id="total-qs">0</span> | 正確: <span id="score">0</span></div>
+        <div class="card">
+            <h3 id="question-text"></h3>
+            <div id="options-container"></div>
+            <p id="feedback" class="hidden"></p>
+            <button id="next-btn" class="hidden" style="margin-top: 20px; padding: 10px 20px; cursor: pointer;">下一題</button>
+        </div>
+    </div>
+
+    <script>
+        let questionsData = {};
+        let currentQuestions = [];
+        let currentIndex = 0;
+        let score = 0;
+
+        fetch('questions.json')
+            .then(res => res.json())
+            .then(data => {
+                questionsData = data;
+                const select = document.getElementById('chapter-select');
+                select.innerHTML = '';
+                Object.keys(data).sort((a,b) => parseInt(a.slice(2)) - parseInt(b.slice(2))).forEach(ch => {
+                    const opt = document.createElement('option');
+                    opt.value = ch;
+                    opt.textContent = ch;
+                    select.appendChild(opt);
+                });
+            });
+
+        document.getElementById('start-btn').onclick = () => {
+            const ch = document.getElementById('chapter-select').value;
+            if (!ch) return;
+            currentQuestions = questionsData[ch];
+            currentIndex = 0;
+            score = 0;
+            document.getElementById('setup').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+            showQuestion();
+        };
+
+        function showQuestion() {
+            const q = currentQuestions[currentIndex];
+            document.getElementById('current-idx').textContent = currentIndex + 1;
+            document.getElementById('total-qs').textContent = currentQuestions.length;
+            document.getElementById('score').textContent = score;
+            document.getElementById('question-text').textContent = q.question;
+            
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            document.getElementById('feedback').classList.add('hidden');
+            document.getElementById('next-btn').classList.add('hidden');
+
+            ['A', 'B', 'C', 'D'].forEach((label, idx) => {
+                if (!q.options[idx]) return;
+                const opt = document.createElement('div');
+                opt.className = 'option';
+                opt.textContent = `(${label}) ${q.options[idx]}`;
+                opt.onclick = () => checkAnswer(label, opt);
+                container.appendChild(opt);
+            });
+        }
+
+        function checkAnswer(selected, element) {
+            const q = currentQuestions[currentIndex];
+            if (document.getElementById('next-btn').classList.contains('hidden')) {
+                const options = document.querySelectorAll('.option');
+                options.forEach(opt => opt.style.pointerEvents = 'none');
+                
+                if (selected === q.answer) {
+                    element.classList.add('correct');
+                    score++;
+                } else {
+                    element.classList.add('wrong');
+                    options.forEach(opt => {
+                        if (opt.textContent.startsWith(`(${q.answer})`)) opt.classList.add('correct');
+                    });
+                }
+                
+                document.getElementById('next-btn').classList.remove('hidden');
+            }
+        }
+
+        document.getElementById('next-btn').onclick = () => {
+            currentIndex++;
+            if (currentIndex < currentQuestions.length) {
+                showQuestion();
+            } else {
+                alert(`練習結束！得分：${score} / ${currentQuestions.length}`);
+                location.reload();
+            }
+        };
+    </script>
+</body>
+</html>
